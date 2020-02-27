@@ -51,7 +51,8 @@ const generate = length => {
 	// parse array to string
 	const parsedString = randomChars.toString().replace(/,/g, '');
 
-	return parsedString;
+	// return parsedString;
+	console.log(parsedString);
 };
 
 exports.generate = generate;
