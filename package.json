@@ -1,0 +1,11 @@
+{
+	"name": "mini-string",
+	"version": "0.0.1",
+	"description": "This library generates a random string with the length you provide",
+	"main": "miniString.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Mozetsu",
+	"license": "ISC"
+}
