@@ -53,6 +53,7 @@ const generate = length => {
 
 	// return parsedString;
 	console.log(parsedString);
+	console.log('This is a log 😋');
 };
 
 exports.generate = generate;
