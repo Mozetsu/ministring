@@ -45,8 +45,6 @@ const generate = (obj = { characters: 'number, lowercase, uppercase', length: 6 
 	if (!obj.characters) obj.characters = 'number, lowercase, uppercase';
 	if (!obj.length) obj.length = 6;
 
-	console.log(obj);
-
 	// array which will store all random characters
 	const randomChars = [];
 	const availableCharactersTypes = parseCharacterTypes(obj);
