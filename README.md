@@ -2,13 +2,13 @@
 
 Generate random strings with ease. Set the length and which characters you need and start generating! It is that simple :grin:
 
-### Install
+## Install
 
 ```bash
 npm install ministring
 ```
 
-### Usage
+## Usage
 
 ```javascript
 const ministring = require('ministring');
