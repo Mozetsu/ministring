@@ -1,6 +1,6 @@
 # Ministring
 
-Generate random strings with ease. Set the length and which characters you need and start generating! It is that simple :grin:
+Generate random strings with ease. Set the length, which characters you need and start generating! It is that simple 😁
 
 ## Install
 
@@ -16,7 +16,7 @@ const ministring = require('ministring');
 ministring();
 ```
 
-By default, strings length is set to **5**, but you can change this value by providing a **number** as the **first argument** to the function like so:
+By default, strings' length is set to **5**, but you can change this value by providing a **number** as the **first argument** to the function like so:
 
 ```javascript
 ministring(7); // Dk9s12Q
