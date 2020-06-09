@@ -1,0 +1,20 @@
+{
+	"name": "ministring",
+	"version": "1.0.0",
+	"description": "",
+	"main": "ministring.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Mozetsu/ministring.git"
+	},
+	"keywords": [],
+	"author": "Mozetsu",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Mozetsu/ministring/issues"
+	},
+	"homepage": "https://github.com/Mozetsu/ministring#readme"
+}
