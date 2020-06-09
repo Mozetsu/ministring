@@ -6,7 +6,7 @@ function randomIntFromInterval(min, max) {
 	return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-function generate(length = 5, characters = { numbers, lowercase, uppercase }) {
+function ministring(length = 5, characters = { numbers, lowercase, uppercase }) {
 	const selectedCharacters = Object.entries(characters);
 	const randomString = [];
 	for (let i = 0; i < length; i++) {
@@ -17,4 +17,4 @@ function generate(length = 5, characters = { numbers, lowercase, uppercase }) {
 	return randomString.toString().replace(/,/g, '');
 }
 
-module.exports = { generate };
+module.exports = ministring;
