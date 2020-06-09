@@ -2,7 +2,19 @@
 
 Generate random strings with ease. Set the length and which characters you need and start generating! It is that simple :grin:
 
-### Guide
+### Install
+
+```bash
+npm install ministring
+```
+
+### Usage
+
+```javascript
+const ministring = require('ministring');
+
+ministring();
+```
 
 By default, strings length is set to **5**, but you can change this value by providing a **number** as the **first argument** to the function like so:
 
