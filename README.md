@@ -1,6 +1,7 @@
 # Ministring
 
-Generate random strings with ease. Set the length and which characters you need and start generating! It is that simple :grin:
+Generate random strings with ease 💙
+Set the length, which characters you need and start generating! It is that simple 😁
 
 ## Install
 
