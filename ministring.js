@@ -9,20 +9,17 @@ function ministring(length = 5, characters = 'numbers, lowercase, uppercase') {
 		uppercase: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''),
 	};
 
-	const verifiedCharacters = {};
-
-	const selectedCharacters = characters.split(', ');
+	const selectedCharacters = characters.replace(/ /g, '').split(',');
+	const verifiedCharacters = [];
 	for (const character of selectedCharacters) {
 		if (!Object.keys(allowedCharacters).includes(character)) return { error: 'Character type not allowed!' };
-		verifiedCharacters[character] = allowedCharacters[character];
+		verifiedCharacters.push(...allowedCharacters[character]);
 	}
 
-	const charactersArray = Object.entries(verifiedCharacters);
 	const randomString = [];
 	for (let i = 0; i < length; i++) {
-		const randomCharacterType = randomIntFromInterval(0, charactersArray.length - 1);
-		const randomChar = randomIntFromInterval(0, charactersArray[randomCharacterType][1].length - 1);
-		randomString.push(charactersArray[randomCharacterType][1][randomChar]);
+		const x = randomIntFromInterval(0, verifiedCharacters.length - 1);
+		randomString.push(verifiedCharacters[x]);
 	}
 	return randomString.toString().replace(/,/g, '');
 }
