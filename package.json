@@ -1,6 +1,6 @@
 {
 	"name": "ministring",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"description": "Generate random strings with ease. Set the length, which characters you need and start generating! It is that simple 😁",
 	"main": "ministring.js",
 	"scripts": {
@@ -10,7 +10,11 @@
 		"type": "git",
 		"url": "git+https://github.com/Mozetsu/ministring.git"
 	},
-	"keywords": [],
+	"keywords": [
+		"generate",
+		"random",
+		"strings"
+	],
 	"author": "Mozetsu",
 	"license": "ISC",
 	"bugs": {
