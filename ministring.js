@@ -1,7 +1,7 @@
 function randomIntFromInterval(min, max) {
 	return Math.floor(Math.random() * (max - min + 1) + min);
 }
-console.log(ministring(7, 'specials'));
+
 function ministring(length = 5, characters = 'numbers, lowercase, uppercase') {
 	const allowedCharacters = {
 		specials: '!@#$%^&*?'.split(''),
