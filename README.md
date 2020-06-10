@@ -24,24 +24,26 @@ By default, every string is set to a length of **5** characters, but you can cha
 ministring(7); // iGaB234
 ```
 
-You can also specify which characters should be part of the string. There are **three** types of characters you can choose from:
+You can also specify which characters should be part of the string. There are **four** types of characters you can choose from:
 
+- **Specials**
 - **Numbers**
 - **Lowercase**
 - **Uppercase**
 
-By default, all strings will contain numbers, lowercase and uppercase, but you can specify which characters should be used when creating a new string. By providing a string with the desired character types as the **second argument** to the function you can create strings with only numbers, lowercase or uppercase characters as the example below shows:
+By default, all strings will contain numbers, lowercase and uppercase, but you can specify which characters should be used when creating a new string. Provide a string with the desired character type as the **second argument** to the function so you can create strings with only one character type as the example shown below:
 
 ```javascript
+ministring(7, 'specials'); // only specials -> #!?##@!
 ministring(7, 'numbers'); // only numbers -> 2858259
 ministring(7, 'lowercase'); // only lowercase -> ioxqblw
 ministring(7, 'uppercase'); // only uppercase -> NZGRWQD
 ```
 
-You can combine different character types to get even more specific strings.
+You can combine all different character types to get even more specific string combinations.
 
 ```javascript
 ministring(4, 'numbers, lowercase'); // cb78
 ministring(12, 'lowercase, uppercase'); // WpJOktOOHgpB
-ministring(8, 'uppercase, numbers'); // DF7X0523
+ministring(8, 'uppercase, numbers, specials'); // D@7X&523
 ```
