@@ -1,6 +1,6 @@
 {
 	"name": "ministring",
-	"version": "1.0.21",
+	"version": "1.0.22",
 	"description": "Generate random strings with ease. Set the length, which characters you need and start generating! It is that simple 😁",
 	"main": "ministring.js",
 	"scripts": {
