@@ -30,11 +30,18 @@ You can also specify which characters should be part of the string. There are **
 - **Lowercase**
 - **Uppercase**
 
-By default, all strings will contain the three different types of characters, but you can change that as well. By providing a string with your desired characters types as the **second argument** to the function you can take the customization even further as shown below:
+By default, all strings will contain numbers, lowercase and uppercase, but you can specify which characters should be used when creating a new string. By providing a string with the desired character types as the **second argument** to the function you can create strings with only numbers, lowercase or uppercase characters as the example below shows:
 
 ```javascript
-ministring(7, 'numbers'); // 2858259
-ministring(7, 'lowercase'); // ioxqblw
-ministring(7, 'uppercase'); // NZGRWQD
-ministring(7, 'numbers, lowercase, uppercase'); // V3vm3RO
+ministring(7, 'numbers'); // only numbers -> 2858259
+ministring(7, 'lowercase'); // only lowercase -> ioxqblw
+ministring(7, 'uppercase'); // only uppercase -> NZGRWQD
+```
+
+You can combine different character types to get even more specific strings.
+
+```javascript
+ministring(4, 'numbers, lowercase'); // cb78
+ministring(12, 'lowercase, uppercase'); // WpJOktOOHgpB
+ministring(8, 'uppercase, numbers'); // DF7X0523
 ```
