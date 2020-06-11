@@ -2,11 +2,13 @@
 
 Generate random strings with ease. Set the length, which characters you need and start generating! It is that simple 😁
 
+
 ## Install
 
 ```bash
 npm install ministring
 ```
+
 
 ## Usage
 
@@ -30,6 +32,7 @@ You can also specify which characters should be part of the string. There are **
 - **Numbers**
 - **Lowercase**
 - **Uppercase**
+
 
 By default, all strings will contain numbers, lowercase and uppercase, but you can specify which characters should be used when creating a new string. Provide a string with the desired character type as the **second argument** to the function so you can create strings with only one character type as the example shown below:
 
