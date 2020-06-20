@@ -1,11 +1,22 @@
-const random = (length = 6) => {
-	require('crypto').randomBytes(256, (err, buf) => {
-		if (err) throw new err();
-		a = buf.toString('hex').slice(0, length);
-	});
-	return a;
-};
-console.log(random(30));
+const crypto = require('crypto');
+let state0 = crypto.randomBytes(1).toString('2'); // SEED - change these to affect the apparent randomness of the outcome
+let state1 = crypto.randomBytes(1).toString('2'); // SEED - change these to affect the apparent randomness of the outcome
+
+console.log(xorshift());
+
+function xorshift() {
+	let s1 = state0;
+	let s0 = state1;
+	state0 = s0;
+
+	s1 ^= s1 << 23;
+	s1 ^= s1 >> 17;
+	s1 ^= s0;
+	s1 ^= s0 >> 26;
+	state1 = s1;
+
+	return state0 + state1;
+}
 
 // function randomIntFromInterval(min, max) {
 // 	return Math.floor(Math.random() * (max - min + 1) + min);
